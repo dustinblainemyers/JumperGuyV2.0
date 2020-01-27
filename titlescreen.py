@@ -1,6 +1,7 @@
 import pygame
 import os
 import sys
+pygame.init()
 
 
 class Idle(pygame.sprite.Sprite):

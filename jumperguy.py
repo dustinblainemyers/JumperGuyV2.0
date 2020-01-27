@@ -57,7 +57,7 @@ class Player(pygame.sprite.Sprite):
             # self.rect.x += 100
 
         if self.rect.y < 160 and self.jumping == False:
-            self.rect.y += 3
+            self.rect.y += 5
             if self.rect.x > 170:
                 self.rect.x -= 5
         if self.longjumping == True and self.rect.y > 120:
@@ -183,6 +183,7 @@ def main():
                 print(mob.hitbox[1])
                 print(player.hitbox[1])
                 exitfun()
+                exit()
 
         player.rate += 1
         player.jumping = False
@@ -248,7 +249,7 @@ def main():
         # Game clock
         clock.tick(FPS)
 
-    pygame.quit()
+    exit()
     # Calling the Exit Function.
     # exitfun()
 

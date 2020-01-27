@@ -183,6 +183,7 @@ def main():
                 print(mob.hitbox[1])
                 print(player.hitbox[1])
                 exitfun()
+                exit()
 
         player.rate += 1
         player.jumping = False
@@ -248,7 +249,7 @@ def main():
         # Game clock
         clock.tick(FPS)
 
-    pygame.quit()
+    exit()
     # Calling the Exit Function.
     # exitfun()
 

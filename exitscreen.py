@@ -2,6 +2,7 @@ import os
 import sys
 import pygame
 
+
 # sprite for exit screen
 
 
@@ -70,7 +71,11 @@ def exitfun():
             # Event handling
 
             if event.type == pygame.KEYDOWN:
-                stop_game = True
+                
+                import jumperguy
+                    
+                jumperguy.main()
+
             if event.type == pygame.QUIT:
                 exit()
 
@@ -95,8 +100,4 @@ def exitfun():
         pygame.display.update()
         clock.tick(60)
 
-    pygame.quit()
-
-
-if __name__ == '__main__':
-    main()
+        
